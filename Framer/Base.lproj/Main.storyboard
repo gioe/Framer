@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Framer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rec-Wb-bp7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fby-SC-YtS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-4P-pR3">
+                                <rect key="frame" x="176" y="332" width="22" height="22"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="43b-3j-kAQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="tBT-3m-pdT"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="di7-jX-XjL" firstAttribute="bottom" secondItem="fby-SC-YtS" secondAttribute="bottom" id="08N-vf-joV"/>
+                            <constraint firstItem="VYb-4P-pR3" firstAttribute="centerY" secondItem="fby-SC-YtS" secondAttribute="centerY" id="0ZV-cP-Exf"/>
+                            <constraint firstItem="43b-3j-kAQ" firstAttribute="leading" secondItem="di7-jX-XjL" secondAttribute="leading" id="2cV-Lr-WTW"/>
+                            <constraint firstItem="di7-jX-XjL" firstAttribute="trailing" secondItem="43b-3j-kAQ" secondAttribute="trailing" id="7qr-dG-dm9"/>
+                            <constraint firstItem="fby-SC-YtS" firstAttribute="top" secondItem="di7-jX-XjL" secondAttribute="top" id="Azs-Fr-Lqf"/>
+                            <constraint firstItem="43b-3j-kAQ" firstAttribute="top" secondItem="di7-jX-XjL" secondAttribute="top" id="KEW-UJ-GEp"/>
+                            <constraint firstItem="VYb-4P-pR3" firstAttribute="centerX" secondItem="fby-SC-YtS" secondAttribute="centerX" id="Leg-AV-sUb"/>
+                            <constraint firstItem="di7-jX-XjL" firstAttribute="trailing" secondItem="fby-SC-YtS" secondAttribute="trailing" id="Tac-Dd-zbC"/>
+                            <constraint firstItem="fby-SC-YtS" firstAttribute="leading" secondItem="di7-jX-XjL" secondAttribute="leading" id="y6L-r8-Ooe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="di7-jX-XjL"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="fby-SC-YtS" id="SVf-XS-BUE"/>
+                        <outlet property="statusTextView" destination="43b-3j-kAQ" id="jyN-Wh-mNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
